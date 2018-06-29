@@ -24,3 +24,14 @@ build:
         name: echo
         code: |
           echo "hello world!"
+      - wercker/maven@1.3.8:
+          pom:               <string> # optional, default: ""
+          settings:          <string> # optional, default: ""
+          security_settings: <string> # optional, default: ""
+          goals:             <string> 
+          profiles:          <string> # optional, default: ""
+          maven_opts:        <string> # optional, default: ""
+          debug:             <string> # optional, default: ""
+          version:           <string> # optional, default: ""
+          cache_repo:        <string> # optional, default: ""
+          sudo_user:         <string> # optional, default: ""
